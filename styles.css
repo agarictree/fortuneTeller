@@ -1,0 +1,19 @@
+#answer {
+    display: block;
+    width: 100vw;
+    height: 100vh;
+    background-image: url("images/02.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#result {
+    width: 70px;
+    height: auto;
+    position: absolute;
+    top: 58vh;
+    left: 48vw;
+}
+#result img {
+    width: 100%;
+    height: auto;
+}
