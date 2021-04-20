@@ -36,15 +36,22 @@ window.onload = function() {
     }, 60)
 }
 
+function getRandomIntInclusive(min, max) {
+    min = Math.ceil(min);
+    max = Math.floor(max);
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+  }
+
 button.onclick = function() {
     let img = result.firstElementChild;
     img.remove();
-    let answers = ["Да", "Нет"];
-    let num = Math.round(Math.random());
+    let answers = ["Да", "Нет", "Неизвестно"];
+    let num = getRandomIntInclusive(0, answers.length - 1)
     let total = answers[num];
     let textBlock = document.createElement("div");
-    textBlock.textContent = total;
+    let p = document.createElement("p");  
+    p.textContent = total;
+    textBlock.append(p);
     result.append(textBlock);
     textBlock.id = "answerText";
-    console.log(num);
 }
