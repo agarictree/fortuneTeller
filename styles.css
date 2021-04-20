@@ -5,15 +5,33 @@
     background-image: url("images/02.svg");
     background-repeat: no-repeat;
     background-position: center;
+    position: relative;
 }
 #result {
     width: 70px;
     height: auto;
     position: absolute;
-    top: 58vh;
-    left: 48vw;
+    top: 44%;
+    left: 47%;
 }
 #result img {
     width: 100%;
     height: auto;
+}
+h1 {
+    text-align: center;
+}
+#getAnswer {
+    display: block;
+    margin: auto;
+}
+#animation {
+    width: 200px;
+    height: auto;
+    position: absolute;
+    top: 40%;
+    left: 40%;
+}
+.animation {
+    transition: all 0.5s linear;
 }
