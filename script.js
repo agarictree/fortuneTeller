@@ -33,7 +33,7 @@ window.onload = function() {
     setInterval(() => {
         rotate+=10;
         animationElement.style.transform = `rotate(${rotate}deg)`
-    }, 60)
+    }, 60);
 }
 
 function getRandomIntInclusive(min, max) {
@@ -54,4 +54,11 @@ button.onclick = function() {
     textBlock.append(p);
     result.append(textBlock);
     textBlock.id = "answerText";
+    setTimeout(() => {
+        textBlock.remove();
+        // let img = document.createElement("img");
+        // img.src = "images/03.png";
+        // img.id = "getAnswer";
+        result.append(img);
+    }, 1000);
 }

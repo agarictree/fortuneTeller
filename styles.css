@@ -26,7 +26,6 @@ body {
     position: absolute;
     padding: 20px;
     box-sizing: border-box;
-    border: 1px solid red;
 }
 #getAnswer {
     width: 50%;
@@ -49,7 +48,6 @@ body {
     height: 100%;
     color: goldenrod;
     margin: 0;
-    border: 1px solid green;
 }
 #answerText p {
     font-size: 35px;
