@@ -32,6 +32,7 @@ window.onload = function() {
     animationElement.classList.add("animation");
     setInterval(() => {
         rotate+=10;
+        // if(rotate == 360) rotate = 0;
         animationElement.style.transform = `rotate(${rotate}deg)`
     }, 60);
 }
